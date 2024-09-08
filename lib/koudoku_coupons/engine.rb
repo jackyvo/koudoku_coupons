@@ -1,3 +1,5 @@
+require './app/helpers/koudoku_coupons/application_helper'
+
 module KoudokuCoupons
   class Engine < ::Rails::Engine
     isolate_namespace KoudokuCoupons
