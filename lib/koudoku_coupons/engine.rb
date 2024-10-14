@@ -8,6 +8,7 @@ module KoudokuCoupons
     # so we can use #koudoku_coupons_controller? in the main_app
     initializer 'load_koudoku_coupons_helpers' do 
       ActiveSupport.on_load(:action_controller) do 
+        require_relative '../../app/helpers/koudoku_coupons/application_helper'
         include KoudokuCoupons::ApplicationHelper
       end
     end 
